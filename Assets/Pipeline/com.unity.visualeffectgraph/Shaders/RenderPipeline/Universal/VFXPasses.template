@@ -1,0 +1,13 @@
+${VFXBegin:VFXPassForward}"UniversalForward"${VFXEnd}
+${VFXBegin:VFXPassShadow}"ShadowCaster"${VFXEnd}
+${VFXBegin:VFXPassVelocity}"MotionVectors"${VFXEnd}
+${VFXBegin:VFXPassForwardAdditionalPragma}#pragma multi_compile_fog${VFXEnd}
+
+${VFXBegin:VFXShaderGraphFunctionsInclude}
+#include "Assets/Pipeline/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
+#include "Assets/Pipeline/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl"
+#include "Assets/Pipeline/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
+#include "Assets/Pipeline/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl"
+#include "Assets/Pipeline/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+#include "Assets/Pipeline/com.unity.render-pipelines.universal/ShaderLibrary/ShaderGraphFunctions.hlsl"
+${VFXEnd}
